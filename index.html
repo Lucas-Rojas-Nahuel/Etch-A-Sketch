@@ -4,10 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="js.js" defer></script>
     <title>Etch A Sketch</title>
-  </head>
-  <body>
+    <script src="script.js" defer ></script>
+</head>
+<body>
     
+    <h1 class="title">Etch a Sketch</h1>
+    <p class="text">Seleccione un tamaño de cuadricula. <span id="text-grid-size">Por defecto es de 16x16 </span></p>
+    <button id="btn-open">Cambiar tamaño</button>
+    
+    <div id="grid-size">
+        <button id="btn-close"><span >X</span></button>
+        <h2 class="title-grid-size">Cambiar Tamaño</h2>
+        <p class="text-grid-size">Seleccione el tamaño a cambiar, el tamaño maximo es de 100 pixeles</p>
+        <span id="alert"></span>
+        <fieldset id="fieldset">
+            <input type="number" name="size" id="size" min="16" max="100" step="1" value="16">
+            <button id="btn-size-changed">Insertar</button>
+        </fieldset>
+    </div>
+    
+    <main id="main">
+        
+    </main>
   </body>
 </html>
